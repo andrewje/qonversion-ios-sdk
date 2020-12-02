@@ -79,7 +79,7 @@ static NSString * const kUserDefaultsSuiteName = @"qonversion.product-center.sui
     
     [weakSelf executePermissionBlocks];
     
-    if (!_productsLoaded) {
+    if (!weakSelf.productsLoaded) {
       [weakSelf loadProducts];
     }
     
